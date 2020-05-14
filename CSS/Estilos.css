@@ -91,8 +91,8 @@ p {
  
  .menu {
    font-size: 20px;
-   height: 100px;
-   margin-top:40vh;
+   height: 0px;
+   margin-top:0vh;
    letter-spacing:6px;
   }
  
@@ -106,6 +106,7 @@ p {
   }
   .menu a {
      display: block;
+     transition: background-color 1s, color 2s ;
   }
  a {
         text-decoration: none;
@@ -132,11 +133,20 @@ p {
    h2 {
       font-size: 20px;
       height: 100px;
-      margin-top:55vh;
+      margin-top:50vh;
       letter-spacing:6px;
       color: #7B68EE;
       display:block;
       text-align:center;
+   }
+   .Sobre {
+   font-size: 20px;
+   height: 100px;
+   margin-top:50vh;
+   letter-spacing:6px;
+   color: #7B68EE;
+   display:block;
+   text-align:center;
    }
    h3 {
       font-size: 20px;
@@ -193,4 +203,28 @@ text-align: center;
       width: 240px;
       object-fit: cover;
       object-position: center;
+      transition: transform 500ms;
     }
+
+    .img-portifólio:hover {
+      transform: scale(1.5)
+    }
+    .Contatos .icons {
+      text-align: center;
+    }
+    .Contatos a {
+      color: whitesmoke;
+      font-size: 4em;
+      transition: text-shadow 1s;
+    }
+
+    .Contatos a:active,
+    .Contatos a:hover  {
+    text-decoration: none;
+    text-shadow: 0px 0px 40px rgb(255, 0, 234);
+    }
+    .menu a:active,
+    .menu a:hover {
+          background-color: rgb(255, 255, 255);;
+          color: #7B68EE;
+         }
